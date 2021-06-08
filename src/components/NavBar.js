@@ -1,5 +1,6 @@
 import React from 'react';
-import {AppBar, makeStyles, Toolbar, Typography} from "@material-ui/core";
+import {AppBar, Toolbar, Typography} from "@material-ui/core";
+
 function NavBar() {
     return (
         <AppBar >

@@ -7,42 +7,11 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import {Button, Toolbar, Typography} from "@material-ui/core";
+import {Toolbar, Typography} from "@material-ui/core";
 import clsx from "clsx";
 import {GreenButton} from "./GreenButton";
 
-const useStyles = makeStyles({
-    table: {
-        minWidth: 650,
-    },
-});
 
-function createData(name, calories, fat, carbs, protein) {
-    return {name, calories, fat, carbs, protein};
-}
-
-const rows = [
-    {
-        "make": "Mercedes-Benz",
-        "percentage": "16.33%",
-        "rawPercentage": 16.333333333333332
-    },
-    {
-        "make": "Toyota",
-        "percentage": "16.00%",
-        "rawPercentage": 16
-    },
-    {
-        "make": "Audi",
-        "percentage": "14.00%",
-        "rawPercentage": 14.000000000000002
-    },
-    {
-        "make": "Renault",
-        "percentage": "14.00%",
-        "rawPercentage": 14.000000000000002
-    }
-];
 const useToolbarStyles = makeStyles((theme) => ({
     root: {
         paddingLeft: theme.spacing(2),
@@ -62,11 +31,11 @@ const useToolbarStyles = makeStyles((theme) => ({
         flex: '1 1 100%',
     },
 }));
-export default function DistributionReport({type, title, data, rowNames, downloadFile}) {
+export default function DistributionReport({title, data, rowNames, downloadFile}) {
     const classes = useToolbarStyles();
 
     function triggerDownload() {
-        downloadFile(type);
+        downloadFile(data);
     }
     return (
         <div>
