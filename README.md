@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). and it is part of country-api project should be runned with [Country api backend](https://github.com/calixtoyg/graphql-country-api)
 
 ## Available Scripts
 
